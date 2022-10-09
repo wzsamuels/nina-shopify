@@ -21,6 +21,11 @@
     flex-direction: column;
     text-align: initial;
   }
+
+  .media-custom > img {
+    object-fit: cover;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -70,15 +75,18 @@
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                  {% if section.settings.image_ratio == 'adapt' %}
-                    style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                    {% if section.settings.image_ratio == 'adapt' %}
+                      style="object-position: {{ block.settings.vertical_image_alignment }} center;padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                    {% else %}
+                      style="object-position: {{ block.settings.vertical_image_alignment }} center;"
                     {% endif %}>
                     {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
                     {{ block.settings.image | image_url: width: 1420 | image_tag:
                       loading: 'lazy',
                       sizes: sizes,
                       widths: '275, 550, 710, 1420',
-                      class: 'multicolumn-card__image'
+                      class: 'multicolumn-card__image media-test',
+                      style: 'object-position: inherit'
                     }}
                   </div>
                 </div>
@@ -372,6 +380,7 @@
           "type": "select",
           "id": "vertical_image_alignment",
           "label": "Vertical Image Alignment",
+          "default": "top",
           "options": [
             {
               "value": "top",
