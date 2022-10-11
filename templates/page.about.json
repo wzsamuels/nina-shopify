@@ -3,46 +3,11 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "show_title": true,
+        "show_title": false,
         "text_align": "center",
-        "show_content": true,
+        "show_content": false,
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "fb56790b-aa5c-4af1-9fca-1a75157c9a03": {
-      "type": "google-map",
-      "blocks": {
-        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "heading_padding_top": 0,
-            "heading_padding_bottom": 0,
-            "heading_margin_top": 0,
-            "heading_margin_bottom": 0
-          }
-        },
-        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-1": {
-          "type": "map",
-          "settings": {
-            "map_width": 600,
-            "map_height": 400,
-            "map_margin_top": 0,
-            "map_margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-0",
-        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-1"
-      ],
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "margin_top": 200,
-        "margin_bottom": 0
       }
     },
     "61777150-1e6e-46c4-8a17-54b89092bdec": {
@@ -71,8 +36,8 @@
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_text_color_2": "#FFFFFF",
-            "button_background_color_2": "#FFFFFF",
+            "button_text_color_2": "#ffffff",
+            "button_background_color_2": "#ffffff",
             "button_style_secondary_2": false
           }
         }
@@ -87,17 +52,52 @@
         "content_alignment": "center",
         "color_type": "scheme",
         "color_scheme": "background-1",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "text_color": "#000000",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 168,
         "padding_bottom": 52
+      }
+    },
+    "fb56790b-aa5c-4af1-9fca-1a75157c9a03": {
+      "type": "google-map",
+      "blocks": {
+        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "heading_padding_top": 0,
+            "heading_padding_bottom": 0,
+            "heading_margin_top": 36,
+            "heading_margin_bottom": 36
+          }
+        },
+        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-1": {
+          "type": "map",
+          "settings": {
+            "map_width": 600,
+            "map_height": 400,
+            "map_margin_top": 0,
+            "map_margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-0",
+        "template--15873403158693__fb56790b-aa5c-4af1-9fca-1a75157c9a03-1665174942c2644d3b-1"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 56,
+        "margin_bottom": 56
       }
     }
   },
   "order": [
     "main",
-    "fb56790b-aa5c-4af1-9fca-1a75157c9a03",
-    "61777150-1e6e-46c4-8a17-54b89092bdec"
+    "61777150-1e6e-46c4-8a17-54b89092bdec",
+    "fb56790b-aa5c-4af1-9fca-1a75157c9a03"
   ]
 }

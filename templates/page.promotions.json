@@ -1,1 +1,73 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "text_align": "center",
+        "show_content": true,
+        "padding_top": 168,
+        "padding_bottom": 28
+      }
+    },
+    "e0d71bcd-ff73-499e-aa4e-317b187dc664": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coupon-sample1.png",
+            "vertical_image_alignment": "top",
+            "title": "Column",
+            "block_header_size": 20,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "block_text_size": 16,
+            "link_label": "",
+            "link": "",
+            "text_align": "center",
+            "text_justify": "start"
+          }
+        },
+        "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coupon-sample1.png",
+            "vertical_image_alignment": "top",
+            "title": "Column",
+            "block_header_size": 20,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "block_text_size": 16,
+            "link_label": "",
+            "link": "",
+            "text_align": "center",
+            "text_justify": "start"
+          }
+        }
+      },
+      "block_order": [
+        "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-0",
+        "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-1"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e0d71bcd-ff73-499e-aa4e-317b187dc664"
+  ]
+}

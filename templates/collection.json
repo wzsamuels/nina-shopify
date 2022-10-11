@@ -2,10 +2,60 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
-        "show_collection_description": true,
+        "show_collection_description": false,
         "show_collection_image": false,
         "color_scheme": "background-1"
+      }
+    },
+    "166407806234dee5b2": {
+      "type": "rich-text",
+      "blocks": {
+        "1664078062cd052f96-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Products<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1664078062cd052f96-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "1664078062cd052f96-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_text_color_1": "#000000",
+            "button_background_color_1": "#000000",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_text_color_2": "#FFFFFF",
+            "button_background_color_2": "#FFFFFF",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1664078062cd052f96-0",
+        "1664078062cd052f96-1",
+        "1664078062cd052f96-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_type": "scheme",
+        "color_scheme": "background-1",
+        "background_color": "#FFFFFF",
+        "text_color": "#000000",
+        "full_width": true,
+        "padding_top": 152,
+        "padding_bottom": 52
       }
     },
     "product-grid": {
@@ -17,7 +67,9 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
@@ -27,6 +79,7 @@
   },
   "order": [
     "banner",
+    "166407806234dee5b2",
     "product-grid"
   ]
 }
