@@ -63,9 +63,9 @@
                   </div>
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank -%}
-                    <ul class="footer-block__details-content list-unstyled">
+                    <ul class="footer-block__details-content list-unstyled tw-flex md:tw-block tw-flex-wrap">
                       {%- for link in block.settings.menu.links -%}
-                        <li>
+                        <li class="tw-px-4">
                           <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                             {{ link.title }}
                           </a>
@@ -90,7 +90,11 @@
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                     {%- endif -%}
                   </div>
-                {%- endcase -%}
+                {%- when 'custom_liquid' -%}
+                  <div class="tw-flex tw-flex-col tw-items-{{ block.settings.justify_content }}">
+                    {{ block.settings.custom_liquid }}
+                  </div>
+              {%- endcase -%}
             </div>
           {%- endfor -%}
         </div>
@@ -394,6 +398,41 @@
 {
   "name": "t:sections.footer.name",
   "blocks": [
+    {
+      "type": "custom_liquid",
+      "name": "Custom Liquid",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Custom Liquid"
+        },
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+          "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+        },
+        {
+          "type": "select",
+          "id": "justify_content",
+          "label": "Horizontal Align Content",
+          "options": [
+            {
+              "value": "start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
+    },
     {
       "type": "link_list",
       "name": "t:sections.footer.blocks.link_list.name",

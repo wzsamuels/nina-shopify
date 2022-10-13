@@ -1,4 +1,5 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -98,21 +99,14 @@
                     src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
                 </div>
               {%- endif -%}
-              <div
-                class="multicolumn-card__info tw-h-full section-{{ section.id }}-text-align tw-justify-{{ block.settings.text_justify }} tw-items-{{ block.settings.text_align }}"
-              >
+              <div class="multicolumn-card__info tw-h-full section-{{ section.id }}-text-align tw-justify-{{ block.settings.text_justify }} tw-items-{{ block.settings.content_horizontal_align }}">
                 {%- if block.settings.title != blank -%}
-                  <h3
-                    style="font-size: {{ block.settings.block_header_size }}px"
-                  >
+                  <h3 class="tw-text-{{ block.settings.block_header_align }}" style="font-size: {{ block.settings.block_header_size }}px">
                     {{ block.settings.title | escape }}
                   </h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div
-                    class="rte"
-                    style="font-size: {{ block.settings.block_text_size }}px;"
-                  >
+                  <div class="rte tw-text-{{ block.settings.block_text_align }}" style="font-size: {{ block.settings.block_text_size }}px;">
                     {{ block.settings.text }}
                   </div>
                 {%- endif -%}
@@ -361,20 +355,57 @@
       "name": "t:sections.multicolumn.blocks.column.name",
       "settings": [
         {
+          "type": "header",
+          "content": "Content Settings"
+        },
+        {
+          "type": "select",
+          "id": "content_horizontal_align",
+          "options": [
+            {
+              "value": "start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Horizontal Content Alignment"
+        },
+        {
+          "type": "select",
+          "id": "text_justify",
+          "options": [
+            {
+              "value": "start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Middle"
+            },
+            {
+              "value": "end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "start",
+          "label": "Vertical Content Alignment"
+        },
+        {
+          "type": "header",
+          "content": "Image Settings"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-        },
-        {
-          "type": "video_url",
-          "id": "video_url",
-          "accept": [
-            "youtube",
-            "vimeo"
-          ],
-          "label": "t:sections.video.settings.video_url.label",
-          "placeholder": "t:sections.video.settings.video_url.placeholder",
-          "info": "t:sections.video.settings.video_url.info"
         },
         {
           "type": "select",
@@ -397,6 +428,25 @@
           ]
         },
         {
+          "type": "header",
+          "content": "Video Settings"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "label": "t:sections.video.settings.video_url.label",
+          "placeholder": "t:sections.video.settings.video_url.placeholder",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "header",
+          "content": "Header Settings"
+        },
+        {
           "type": "text",
           "id": "title",
           "default": "Column",
@@ -409,16 +459,62 @@
           "default": 20
         },
         {
+          "type": "select",
+          "id": "block_header_align",
+          "label": "Header Text Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Block Text Settings"
+        },
+        {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-          "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+          "label": "Block Text"
         },
         {
           "type": "number",
           "id": "block_text_size",
           "label": "Text Font Size (px)",
           "default": 16
+        },
+        {
+          "type": "select",
+          "id": "block_text_align",
+          "label": "Text Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Block Link Settings"
         },
         {
           "type": "text",
@@ -429,46 +525,6 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
-        },
-        {
-          "type": "select",
-          "id": "text_align",
-          "options": [
-            {
-              "value": "start",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "end",
-              "label": "Right"
-            }
-          ],
-          "default": "center",
-          "label": "Horizontal Text Alignment"
-        },
-        {
-          "type": "select",
-          "id": "text_justify",
-          "options": [
-            {
-              "value": "start",
-              "label": "Top"
-            },
-            {
-              "value": "center",
-              "label": "Middle"
-            },
-            {
-              "value": "end",
-              "label": "Bottom"
-            }
-          ],
-          "default": "start",
-          "label": "Vertical Text Alignment"
         }
       ]
     }
