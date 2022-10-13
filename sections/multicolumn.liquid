@@ -4,15 +4,19 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
+  .section-{{ section.id }}-spacing {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    margin-top: {{  section.settings.margin_top | times: 0.75 | round: 0  }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0  }}px;
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
+    .section-{{ section.id }}-spacing {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+      margin-top: {{  section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
 
@@ -38,7 +42,7 @@
 -%}
 
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
-  <div class="page-width section-{{ section.id }}-padding isolate">
+  <div class="page-width section-{{ section.id }}-spacing isolate">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
         <h2 class="title {{ section.settings.heading_size }}">
@@ -106,7 +110,7 @@
                   </h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte tw-text-{{ block.settings.block_text_align }}" style="font-size: {{ block.settings.block_text_size }}px;">
+                  <div class="rte [&>*]:tw-text-{{ block.settings.block_text_align }}" style="font-size: {{ block.settings.block_text_size }}px;">
                     {{ block.settings.text }}
                   </div>
                 {%- endif -%}
@@ -326,27 +330,47 @@
     },
     {
       "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "content": "Spacing"
     },
     {
       "type": "range",
       "id": "padding_top",
+      "label": "Top Padding",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 0
     },
     {
       "type": "range",
       "id": "padding_bottom",
+      "label": "Bottom Padding",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Top Margin",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Bottom Margin",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
     }
   ],
   "blocks": [

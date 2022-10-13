@@ -16,32 +16,36 @@
         "template--15873403256997__8db2fbbd-7d92-4f94-ae84-90e4d9cf66b7-166526101642b680a5-0": {
           "type": "column",
           "settings": {
-            "video_url": "",
+            "content_horizontal_align": "center",
+            "text_justify": "center",
             "vertical_image_alignment": "top",
-            "title": "Column",
+            "video_url": "",
+            "title": "",
             "block_header_size": 20,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "block_header_align": "left",
+            "text": "<p>Loc maintenance<\/p><p>Loc Retwist<\/p><p>Starting Locs<\/p><p>Loc Repair ( inquire about methods)<\/p><p>Senegalese Twist<\/p><p>Kinky Twist<\/p><p>Cornrows<\/p><p>Feed-Ins<\/p><p>Crochets<\/p><p>Passion twist<\/p><p>Micro braids<\/p><p>Box braids<\/p><p>Knotless Braids<\/p><p>Bohemian Braids<\/p><p>Sew-Ins<\/p><p>Marley Braids<\/p><p>Natural Hair Twist<\/p>",
             "block_text_size": 16,
+            "block_text_align": "center",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "center"
+            "link": ""
           }
         },
         "template--15873403256997__8db2fbbd-7d92-4f94-ae84-90e4d9cf66b7-166526101642b680a5-1": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Lemonade_cornrow_Feedib.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         }
       },
@@ -50,7 +54,7 @@
         "template--15873403256997__8db2fbbd-7d92-4f94-ae84-90e4d9cf66b7-166526101642b680a5-1"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Our Services",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -72,497 +76,559 @@
         "c3a50399-329b-4fc9-933b-5db6fad61413": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Bob_Box_Braid_with_Curls.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Bob Box Braid with Curls",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "14bb69e1-9b0c-471b-a0d5-fc8630a5ec94": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Goddess_Knotless_Braids_1.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Bohemian Box Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "3ec15bf3-c64f-4cbf-b588-1b558ff1f647": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Box_braids_1.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Box Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "template--15873403256997__efefe21e-1d1a-44fc-9244-54843493c75e-16651807336f3fe9ba-0": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Box_braids_with_crochet_at_the_ends.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Box braids with Crochet Ends",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "template--15873403256997__efefe21e-1d1a-44fc-9244-54843493c75e-16651807336f3fe9ba-1": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "end",
             "image": "shopify:\/\/shop_images\/Box_braids_with_wavy_ends.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Box braids with Wavy Ends",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "end",
-            "text_justify": "end"
+            "link": ""
           }
         },
         "ea8eeac2-7433-49cb-bd47-610c3d193335": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Cornrow_feed_in_ponytail.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Cornrow Feed-In Ponytail",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "template--15873403256997__efefe21e-1d1a-44fc-9244-54843493c75e-16651807336f3fe9ba-2": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Cornrow_ponytail_9_8a147907-5b4b-4a06-b482-ddb5e16ea5f4.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Cornrow Ponytail",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "67c1b82b-0696-4d2d-9681-31ce89b54d64": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Feed_in_cornrows.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Feed-In Cornrows",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "1703a063-fa72-48ef-9994-923f4f447417": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Feed_in_cornrow_with_613_color_streak.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Feed-In Cornrow with 613 Color Streak",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "fb2beacf-0e29-41ba-b110-f15b58fa4da0": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Fulani_feed_in_cornrows.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Fulani Feed-In Cornrows",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "4794f357-ac53-4bb9-818f-f02f3476319a": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Knotless_braids_1.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Knotless Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "a487eb1e-93af-4553-9fc3-f1a3ad45a856": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Large_knotless_braids.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Large Knotless Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "6bf85314-03ce-446a-b06b-29e1b768065d": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Lemonade_cornrow_Feedib.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Lemonade Feed-In Cornrow",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "06c7efdd-2cf3-4d7f-b75e-98246e1bf600": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Loc_Retwist.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Loc Retwist",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "e5aea9bc-0ee1-4588-aa62-3c60ec3d12e8": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Locs_retwist_and_style.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Locs Retwist and Style",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "d6f16429-6427-408a-b04c-9510d44da301": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Feed_in_cornrow_ponytail.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Feed-In Cornrow Ponytail",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "5ac803cf-e4b1-4060-8a77-a1e952320e41": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Knotless_with_heart_design_8fb4bb48-72f1-48d4-bece-db2f91c061c3.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Knotless with Heart Design",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "1e9b582f-7e1d-4573-b244-fe90cdf83da7": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Marley_twist_braids_2.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Marley Twist",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "5b975eaa-d0a4-4c76-aa2b-f9e30e2b5e6f": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Cornrow_Mohawk_with_box_braids_2.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Cornrow Mohawk with Box Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "fccf12a3-9bae-410b-8bca-acdbba4fa1b7": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Mens_cornrows_with_design.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Men's Cornrows with Design",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "84373724-7424-42dc-adb1-e4e526e7f7a4": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Micros_with_Kanekalon_hair.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Micros with Kanekalon Hair",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "9139f406-8916-4c63-b7ae-966fc019dc97": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Mohawk_box_braids.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Mohawk Box Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "5b6e5693-cbab-4360-b336-4803d556e8c6": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Purple_knotless_braids.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Purple Knotless Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "84d7fc02-c9c8-4af7-a9b0-704eef01bb42": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Rainbow_box_braids_2.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Rainbow Box Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "378139d6-a885-4f94-abfd-74f97b967d57": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Red_knotless_braids.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Red knotless braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "9b1c39de-5faa-4941-a99b-068300b80b3e": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Red_Mohawk_box_braids_with_crochet_at_the_ends.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Red Mohawk Box Braids with Crochet Ends",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "d3d9b6ef-506f-48e0-a3bf-8f17ec849d22": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Senegalese_braids_with_curls.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Senegalese Braids with Curls",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "f9ff2df0-25f8-408a-ae88-456dfeb63bed": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Senegalese_Twist_d3036f30-fd3c-4ad8-960a-a575d66e09fe.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Senegalese Twist",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "12b6de44-4de9-4b82-98f2-0691562b738d": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Small_Combtwist.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Small Combtwist",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "6f628101-f2ed-4e1c-9980-83830fc76f01": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Small_knotless_braids_2.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Small Knotless Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "5c0161f0-e831-4c98-86e5-314f6b31950c": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/Small_Two_strand_twist.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Small Two Strand Twist",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         }
       },
@@ -622,286 +688,324 @@
         "96f294dc-351b-4538-9e8c-7db72ad66ac8": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=4EDP8nh79kY?feature=share7",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=4EDP8nh79kY?feature=share7",
             "title": "Box Braids 1",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "2fb20841-bf1e-4227-8c5e-a7cb69e9ca08": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=rI9rZVThsMg?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=rI9rZVThsMg?feature=share",
             "title": "Box Braids 2",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "ac888ae4-65ee-44ad-9043-62fcc3ef1c6f": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=rMb9FJhhzMw",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=rMb9FJhhzMw",
             "title": "Box Braids with Wavy Ends",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "d9d3cb32-b12e-4dea-94fd-c0b81859c298": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=P1QL5m0xa0g",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=P1QL5m0xa0g",
             "title": "Cornrow Ponytail",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "d176f6cb-cdcc-41ac-9000-999669eaed21": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=sFpDngEAJRY?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=sFpDngEAJRY?feature=share",
             "title": "Feed-In Braids",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "584f96e0-ac67-4812-9cbe-828e80155310": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=INaxMqbp2nQ",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=INaxMqbp2nQ",
             "title": "Feed-In Cornrows 1",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "1d283933-1763-4414-b4ea-35a7b78e3215": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=wAcpsqmriYg?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=wAcpsqmriYg?feature=share",
             "title": "Feed-In Cornrows 2",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "df9708db-5bcf-47b3-87f3-fc20bda4c3ab": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=fkLC-CGjrg4?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=fkLC-CGjrg4?feature=share",
             "title": "Feed-In Cornrows 3",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "4013be6c-411d-4a8f-a93e-7f1ca7c7e17a": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=3ir7yZ8qfa0?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=3ir7yZ8qfa0?feature=share",
             "title": "Feed-In Cornrows 4",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "ee76719c-0bec-4ed4-ac38-f11747a64b6c": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=W-KbVrr3A88?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=W-KbVrr3A88?feature=share",
             "title": "Feed-In Cornrows 5",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "53912882-0ac5-4dcf-8c91-5606505d9283": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=864RY1gRKBE?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=864RY1gRKBE?feature=share",
             "title": "Feed-In Cornrows 6",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "99165080-7e40-4b40-8a0c-33f9600c2df7": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=4GIm_9Rnm5o?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=4GIm_9Rnm5o?feature=share",
             "title": "Feed-In Cornrows 7",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "7d8b57e2-ab45-4cd9-934a-0279bd9e0043": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=UTX6pQ1hm-g?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=UTX6pQ1hm-g?feature=share",
             "title": "Feed-In Cornrows 8",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "05ce3f25-c22b-4f93-92d9-2f8e154f3b20": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=hUECQTaL82M?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=hUECQTaL82M?feature=share",
             "title": "Feed-In Cornrows 9",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "96effe97-5d69-4fc5-a255-60f10dd4a99d": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=svszd9eSqZQ?feature=share",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=svszd9eSqZQ?feature=share",
             "title": "Feed-In Cornrows 10",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "84b6ed4d-6fe5-4864-b6e6-167cd6260409": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=XhTKmZYFjGw",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=XhTKmZYFjGw",
             "title": "Feed-In Ponytail",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "template--15873403256997__3ed7f245-d6b0-4b14-83de-02e66266301a-166526101642b680a5-2": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=4sQlP7kWoeE",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=4sQlP7kWoeE",
             "title": "Fulani Feed-In Cornrow",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "template--15873403256997__3ed7f245-d6b0-4b14-83de-02e66266301a-166526101642b680a5-0": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=XiqVw-Dh2Pg",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=XiqVw-Dh2Pg",
             "title": "Knotless Braids 1",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "template--15873403256997__3ed7f245-d6b0-4b14-83de-02e66266301a-166526101642b680a5-1": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=14SF_92GbU4",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "top",
+            "video_url": "https:\/\/youtube.com\/watch?v=14SF_92GbU4",
             "title": "Knotless Braids 2",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         }
       },

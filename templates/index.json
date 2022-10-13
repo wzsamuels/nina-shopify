@@ -59,62 +59,70 @@
         "column2": {
           "type": "column",
           "settings": {
-            "video_url": "",
+            "content_horizontal_align": "center",
+            "text_justify": "center",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "An Incredible Variety of Styles",
             "block_header_size": 30,
+            "block_header_align": "center",
             "text": "<p>For Men and Women with All Hair Types<\/p>",
             "block_text_size": 20,
+            "block_text_align": "center",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "center"
+            "link": ""
           }
         },
         "817b0c2f-ef51-423a-af3a-4eaadb6d6f51": {
           "type": "column",
           "settings": {
-            "video_url": "https:\/\/youtube.com\/watch?v=21EW_czlaKw",
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "vertical_image_alignment": "center",
+            "video_url": "https:\/\/youtube.com\/watch?v=21EW_czlaKw",
             "title": "",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "end",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "0cd4dcd7-0369-4eac-9476-40030cba061d": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "center",
             "image": "shopify:\/\/shop_images\/braid14.jpg",
-            "video_url": "",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "center"
+            "link": ""
           }
         },
         "7561df89-fd76-493f-bf27-d076113f3cff": {
           "type": "column",
           "settings": {
-            "video_url": "",
+            "content_horizontal_align": "center",
+            "text_justify": "center",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "With Stunning Results",
             "block_header_size": 30,
+            "block_header_align": "center",
             "text": "<p>Over 25 years of experience in the Greensboro community.<\/p>",
             "block_text_size": 20,
+            "block_text_align": "center",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "center"
+            "link": ""
           }
         }
       },

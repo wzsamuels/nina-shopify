@@ -31,9 +31,25 @@
   #Banner-{{ section.id }} {
     height: {{ section.settings.image_height }}vh;
   }
+
+  .section-{{ section.id }}-spacing {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    margin-top: {{  section.settings.margin_top | times: 0.75 | round: 0  }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0  }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-spacing {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+      margin-top: {{  section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+  }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
+<div id="Banner-{{ section.id }}" class="section-{{ section.id }}-spacing banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -91,17 +107,17 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box content-container content-container--full-width-mobile gradient"
-         style="background-color: {{ section.settings.background_color }}; border-radius: {{ section.settings.text_box_radius }}px;">
+    <div class="banner__box content-container content-container--full-width-mobile gradient {% if section.settings.color_type == "scheme" %}color-{{ section.settings.color_scheme }}{% endif %}"
+         style="{% if section.settings.color_type == "custom" %}background-color: {{ section.settings.background_color }}{% endif %}; border-radius: {{ section.settings.text_box_radius }}px;">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              <span style="color: {{ block.settings.header_color }}">{{ block.settings.heading | escape }}</span>
+              <span style="{% if section.settings.color_type == "custom" %}color: {{ block.settings.header_color }}{% endif %};">{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
             <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <span style="color: {{ block.settings.text_color }}">{{ block.settings.text | escape }}</span>
+              <span style="{% if section.settings.color_type == "custom" %}color: {{ block.settings.text_color }}{% endif %}">{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
@@ -168,13 +184,66 @@
     },
     {
       "type": "header",
-      "content": "Text Box Settings"
+      "content": "Section Colors"
+    },
+    {
+      "type": "radio",
+      "id": "color_type",
+      "label": "Color Option",
+      "options": [
+        {
+          "value": "scheme",
+          "label": "Use Color Scheme"
+        },
+        {
+          "value": "custom",
+          "label": "Use Custom Colors"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
     },
     {
       "type": "color",
       "id": "background_color",
-      "label": "Text Box Background Color",
+      "label": "Custom Text Box Background Color",
       "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Custom Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Text Box Settings"
     },
     {
       "type": "number",
@@ -253,35 +322,6 @@
       "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
     },
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.image-banner.settings.color_scheme.info"
-    },
-    {
       "type": "header",
       "content": "t:sections.image-banner.settings.header.content"
     },
@@ -316,6 +356,50 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Top Margin",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Bottom Margin",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
     }
   ],
   "blocks": [

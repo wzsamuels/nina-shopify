@@ -1,29 +1,97 @@
 {
   "sections": {
+    "bc747387-44fd-4875-bf23-206b395a4268": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "header_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_color": "#000000",
+            "text_style": "body"
+          }
+        },
+        "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_text_color_1": "#000000",
+            "button_background_color_1": "#000000",
+            "button_padding_1": 0,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_text_color_2": "#ffffff",
+            "button_background_color_2": "#ffffff",
+            "button_padding_2": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-0",
+        "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-1",
+        "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Feed_in_cornrow_ponytail.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": 50,
+        "adapt_height_first_image": false,
+        "color_type": "scheme",
+        "color_scheme": "accent-1",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "text_box_radius": 0,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 152,
+        "margin_bottom": 0
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
         "featured_image": {
           "type": "featured_image",
+          "disabled": true,
           "settings": {
-            "image_height": "adapt"
+            "image_height": "medium"
           }
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {
-            "blog_show_date": true,
+            "blog_show_date": false,
             "blog_show_author": false
           }
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "disabled": true,
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -31,10 +99,15 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
+    "bc747387-44fd-4875-bf23-206b395a4268",
     "main"
   ]
 }

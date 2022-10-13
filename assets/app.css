@@ -551,6 +551,11 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.tw-my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .tw-flex {
   display: flex;
 }
@@ -567,12 +572,40 @@ video {
   flex-wrap: wrap;
 }
 
+.tw-items-start {
+  align-items: flex-start;
+}
+
+.tw-items-end {
+  align-items: flex-end;
+}
+
 .tw-items-center {
   align-items: center;
 }
 
+.tw-justify-start {
+  justify-content: flex-start;
+}
+
+.tw-justify-end {
+  justify-content: flex-end;
+}
+
 .tw-justify-center {
   justify-content: center;
+}
+
+.tw-p-4 {
+  padding: 1rem;
+}
+
+.tw-p-16 {
+  padding: 4rem;
+}
+
+.tw-p-12 {
+  padding: 3rem;
 }
 
 .tw-px-4 {
@@ -580,8 +613,32 @@ video {
   padding-right: 1rem;
 }
 
+.tw-text-left {
+  text-align: left;
+}
+
+.tw-text-center {
+  text-align: center;
+}
+
+.tw-text-right {
+  text-align: right;
+}
+
 @media (min-width: 750px) {
   .md\:tw-block {
     display: block;
   }
+}
+
+.\[\&\>\*\]\:tw-text-left>* {
+  text-align: left;
+}
+
+.\[\&\>\*\]\:tw-text-center>* {
+  text-align: center;
+}
+
+.\[\&\>\*\]\:tw-text-right>* {
+  text-align: right;
 }

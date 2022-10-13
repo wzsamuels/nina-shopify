@@ -1,15 +1,17 @@
 {%- style -%}
-  .section-{{ section.id }}-padding {
+  .section-{{ section.id }}-spacing {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    margin-top: {{  section.settings.margin_top }}px;
-    margin-bottom: {{ section.settings.margin_bottom }}px;
+    margin-top: {{  section.settings.margin_top | times: 0.75 | round: 0  }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0  }}px;
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
+    .section-{{ section.id }}-spacing {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+      margin-top: {{  section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
 
@@ -38,7 +40,7 @@
 
 <!---->
 <!--style="max-width: {{ block.settings.map_width }}px; max-height:{{ block.settings.map_height }}px;"-->
-<div class="tw-flex tw-justify-center tw-items-center tw-flex-col section-{{ section.id }}-padding" style="max-height: 500px">
+<div class="tw-flex tw-justify-center tw-items-center tw-flex-col section-{{ section.id }}-spacing" style="max-height: 500px">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'heading' -%}
