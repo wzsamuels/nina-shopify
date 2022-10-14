@@ -14,7 +14,9 @@
   }
 {%- endstyle -%}
 
-<article class="article-template section-{{ section.id }}-padding" itemscope itemtype="http://schema.org/BlogPosting">
+<article
+  style="{% if section.settings.color_type == "custom" %}color: {{ section.settings.text_color }}; background-color: {{ section.settings.background_color }}{% endif %}"
+  class="{% if section.settings.color_type == "scheme" %}color-{{ section.settings.color_scheme }}{% endif %} article-template section-{{ section.id }}-padding" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -135,14 +137,13 @@
               {%- endif -%}
 
               {%- for comment in article.comments -%}
-              <div class="background-secondary tw-my-4 tw-p-12">
+              <div class="background-secondary tw-my-4 tw-p-2">
                 <article id="{{ comment.id }}" class="article-template__comments-comment background-secondary" style="background: none">
 
-                  {{ comment.content }}
+                  <span class="tw-text-4xl tw-mb-16">{{ comment.content }}</span>
 
-                  <footer class="right">
-                    <p>{{ comment.author }}</p>
-                    <p>{{ comment.created_at | time_tag: format: 'date' }}</p>
+                  <footer>
+                    <p>--&nbsp{{ comment.author }}, {{ comment.created_at | time_tag: format: 'date' }}</p>
                   </footer>
                 </article>
               </div>
@@ -264,7 +265,7 @@
             {%- if blog.moderated? -%}
               <p class="article-template__comment-warning caption">Please note, reviews need to be approved before they are published.</p>
             {%- endif -%}
-            <input type="submit" class="button" value="Post a Review">
+            <input type="submit" class="button" value="Post a Review" style="{% if section.settings.color_type == "custom" %}color: {{ section.settings.submit_text_color }}; background-color: {{ section.settings.submit_background_color }}{% endif %}">
           {% endform %}
         </div>
       </div>
@@ -318,6 +319,73 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "radio",
+      "id": "color_type",
+      "label": "Color Option",
+      "options": [
+        {
+          "value": "scheme",
+          "label": "Use Color Scheme"
+        },
+        {
+          "value": "custom",
+          "label": "Use Custom Colors"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Custom Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Custom Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "submit_text_color",
+      "label": "Custom Submit Button Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "submit_background_color",
+      "label": "Custom Submit Button Background Color",
+      "default": "#000000"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"

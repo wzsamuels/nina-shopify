@@ -2,8 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "show_title": true,
+        "show_title": false,
         "text_align": "center",
         "show_content": true,
         "padding_top": 168,
@@ -16,31 +17,37 @@
         "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-0": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/coupon-sample1.png",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Column",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         },
         "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-1": {
           "type": "column",
           "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
             "image": "shopify:\/\/shop_images\/coupon-sample1.png",
             "vertical_image_alignment": "top",
+            "video_url": "",
             "title": "Column",
             "block_header_size": 20,
+            "block_header_align": "left",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "block_text_size": 16,
+            "block_text_align": "left",
             "link_label": "",
-            "link": "",
-            "text_align": "center",
-            "text_justify": "start"
+            "link": ""
           }
         }
       },
@@ -61,8 +68,10 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "margin_top": 156,
+        "margin_bottom": 0
       }
     }
   },

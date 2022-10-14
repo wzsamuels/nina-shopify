@@ -556,6 +556,14 @@ video {
   margin-bottom: 1rem;
 }
 
+.tw-mb-8 {
+  margin-bottom: 2rem;
+}
+
+.tw-mb-16 {
+  margin-bottom: 4rem;
+}
+
 .tw-flex {
   display: flex;
 }
@@ -608,6 +616,10 @@ video {
   padding: 3rem;
 }
 
+.tw-p-2 {
+  padding: 0.5rem;
+}
+
 .tw-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -623,6 +635,26 @@ video {
 
 .tw-text-right {
   text-align: right;
+}
+
+.tw-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.tw-text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.tw-text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.tw-text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 @media (min-width: 750px) {

@@ -1,3 +1,4 @@
+/*
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: 5rem;
 }
@@ -7,6 +8,10 @@
     margin-top: calc(5rem + var(--page-width-margin));
   }
 }
+
+
+ */
+
 
 .article-template__hero-container {
   max-width: 130rem;
@@ -101,6 +106,7 @@
   margin-top: 1.5rem;
 }
 
+/*
 .article-template__comment-wrapper {
   margin-top: 5rem;
   padding: 2.7rem 0;
@@ -117,13 +123,15 @@
   margin-top: 0;
 }
 
+
+ */
 .article-template__comments {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 @media screen and (min-width: 750px) {
   .article-template__comments {
-    margin-bottom: 7rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -131,12 +139,14 @@
   margin-bottom: 4rem;
 }
 
+
+
 .article-template__comments-comment {
-  /*
+
   color: rgba(var(--color-foreground), 0.75);
   background-color: rgb(var(--color-background));
 
-   */
+
   margin-bottom: 1.5rem;
   padding: 2rem 2rem 1.5rem;
 }

@@ -6,7 +6,7 @@
         "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "We'd Love to Hear About Your Experience!",
             "header_color": "#000000",
             "heading_size": "h1"
           }
@@ -14,7 +14,7 @@
         "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Leave a review for us below!",
             "text_color": "#000000",
             "text_style": "body"
           }
@@ -62,6 +62,59 @@
         "margin_bottom": 0
       }
     },
+    "2319c312-a6c6-4b6c-895f-b6107bdc2a83": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15758872215717__2319c312-a6c6-4b6c-895f-b6107bdc2a83-1665710461591ff484-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Reviews<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--15758872215717__2319c312-a6c6-4b6c-895f-b6107bdc2a83-1665710461591ff484-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--15758872215717__2319c312-a6c6-4b6c-895f-b6107bdc2a83-1665710461591ff484-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_text_color_1": "#000000",
+            "button_background_color_1": "#000000",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_text_color_2": "#ffffff",
+            "button_background_color_2": "#ffffff",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15758872215717__2319c312-a6c6-4b6c-895f-b6107bdc2a83-1665710461591ff484-0",
+        "template--15758872215717__2319c312-a6c6-4b6c-895f-b6107bdc2a83-1665710461591ff484-1",
+        "template--15758872215717__2319c312-a6c6-4b6c-895f-b6107bdc2a83-1665710461591ff484-2"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_type": "scheme",
+        "color_scheme": "background-1",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 40,
+        "margin_bottom": 40
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -101,6 +154,12 @@
         "content"
       ],
       "settings": {
+        "color_type": "scheme",
+        "color_scheme": "background-1",
+        "background_color": "#FFFFFF",
+        "text_color": "#000000",
+        "submit_text_color": "#FFFFFF",
+        "submit_background_color": "#000000",
         "padding_top": 0,
         "padding_bottom": 52
       }
@@ -108,6 +167,7 @@
   },
   "order": [
     "bc747387-44fd-4875-bf23-206b395a4268",
+    "2319c312-a6c6-4b6c-895f-b6107bdc2a83",
     "main"
   ]
 }
