@@ -41,7 +41,7 @@
         "template--15758872215717__bc747387-44fd-4875-bf23-206b395a4268-16656286478ecc43f3-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Feed_in_cornrow_ponytail.jpg",
+        "image": "shopify:\/\/shop_images\/pexels-godisable-jacob-2009395.jpg",
         "image_overlay_opacity": 0,
         "image_height": 50,
         "adapt_height_first_image": false,
@@ -156,9 +156,9 @@
       "settings": {
         "color_type": "scheme",
         "color_scheme": "background-1",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "text_color": "#000000",
-        "submit_text_color": "#FFFFFF",
+        "submit_text_color": "#ffffff",
         "submit_background_color": "#000000",
         "padding_top": 0,
         "padding_bottom": 52

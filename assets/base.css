@@ -2365,7 +2365,6 @@ input[type='checkbox'] {
 .header__icons {
   display: flex;
   grid-area: icons;
-  justify-self: end;
 }
 
 .header__icon:not(.header__icon--summary),
