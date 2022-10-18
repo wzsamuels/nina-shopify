@@ -556,6 +556,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.tw-mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .tw-ml-4 {
   margin-left: 1rem;
 }
@@ -584,6 +589,10 @@ video {
   flex-wrap: wrap;
 }
 
+.tw-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .tw-items-start {
   align-items: flex-start;
 }
@@ -606,6 +615,14 @@ video {
 
 .tw-justify-center {
   justify-content: center;
+}
+
+.tw-justify-between {
+  justify-content: space-between;
+}
+
+.tw-justify-around {
+  justify-content: space-around;
 }
 
 .tw-justify-self-center {

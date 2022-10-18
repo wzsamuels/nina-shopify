@@ -558,7 +558,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div class="header__icons tw-w-full tw-justify-center tw-justify-self-center">
+    <div class="header__icons tw-w-full tw-justify-around tw-justify-self-center tw-flex-nowrap">
       <div class="tw-flex">
         <details-modal class="header__search">
           <details>
@@ -670,7 +670,7 @@
       </a>
       </div>
       {%- if section.settings.show_social -%}
-        <ul class="footer__list-social list-unstyled list-social" role="list">
+        <ul class="footer__list-social list-unstyled tw-flex tw-justify-end tw-mx-4" role="list">
           {%- if settings.social_twitter_link != blank -%}
             <li class="list-social__item">
               <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >

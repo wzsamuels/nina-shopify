@@ -164,6 +164,7 @@
           "show_line_separator": false,
           "header_position": "fixed",
           "mobile_logo_position": "center",
+          "show_social": true,
           "margin_bottom": 0,
           "padding_top": 20,
           "padding_bottom": 20
