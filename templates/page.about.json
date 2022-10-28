@@ -29,7 +29,7 @@
         "template--15873403158693__61777150-1e6e-46c4-8a17-54b89092bdec-16651810165cdb4744-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_text_color_1": "#000000",
             "button_background_color_1": "#000000",
@@ -56,7 +56,60 @@
         "text_color": "#000000",
         "full_width": true,
         "padding_top": 168,
-        "padding_bottom": 52
+        "padding_bottom": 52,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "33f536ad-74ec-48db-84d4-524c9ca144b7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15873403158693__33f536ad-74ec-48db-84d4-524c9ca144b7-166623011403e0f044-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Office Event Spaces for Rent!<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--15873403158693__33f536ad-74ec-48db-84d4-524c9ca144b7-166623011403e0f044-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have spaces available for hourly, daily, month and annual rentals.<\/p><p>Currently seeking:<\/p><p>Stylists, mail techs, lash techs, tattoo artists, and massage therapists.<\/p><p>Please call (336) 615-1321 for more information. <\/p>"
+          }
+        },
+        "template--15873403158693__33f536ad-74ec-48db-84d4-524c9ca144b7-166623011403e0f044-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_text_color_1": "#000000",
+            "button_background_color_1": "#000000",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_text_color_2": "#FFFFFF",
+            "button_background_color_2": "#FFFFFF",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15873403158693__33f536ad-74ec-48db-84d4-524c9ca144b7-166623011403e0f044-0",
+        "template--15873403158693__33f536ad-74ec-48db-84d4-524c9ca144b7-166623011403e0f044-1",
+        "template--15873403158693__33f536ad-74ec-48db-84d4-524c9ca144b7-166623011403e0f044-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_type": "scheme",
+        "color_scheme": "background-1",
+        "background_color": "#FFFFFF",
+        "text_color": "#000000",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     },
     "fb56790b-aa5c-4af1-9fca-1a75157c9a03": {
@@ -98,6 +151,7 @@
   "order": [
     "main",
     "61777150-1e6e-46c4-8a17-54b89092bdec",
+    "33f536ad-74ec-48db-84d4-524c9ca144b7",
     "fb56790b-aa5c-4af1-9fca-1a75157c9a03"
   ]
 }

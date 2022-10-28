@@ -91,7 +91,7 @@
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
                 <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %}
-                  href="{{ block.settings.button_link_2 }}"{% endif %}
+                  href="sms:+13366151321"{% endif %}
                   class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %} button-style-2"
                   style="color: {{ block.settings.button_text_color_2 }}; background-color: {{  block.settings.button_background_color_2 }};"
                 >{{ block.settings.button_label_2 | escape }}</a>

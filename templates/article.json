@@ -102,8 +102,8 @@
         "template--15758872215717__2319c312-a6c6-4b6c-895f-b6107bdc2a83-1665710461591ff484-2"
       ],
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_type": "scheme",
         "color_scheme": "background-1",
         "background_color": "#ffffff",
