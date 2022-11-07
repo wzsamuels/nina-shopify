@@ -127,7 +127,6 @@
               {%- if block.settings.button_label_2 != blank -%}
                 <a style="padding-top: {{ block.settings.button_padding_2 }}px; padding-bottom: {{ block.settings.button_padding_2 }}; color: {{ block.settings.button_text_color_2 }}; background-color: {{ block.settings.button_background_color_2 }}" {% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
               {%- endif -%}
-
             </div>
         {%- endcase -%}
       {%- endfor -%}
@@ -445,7 +444,7 @@
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
-      "limit": 1,
+      "limit": 10,
       "settings": [
         {
           "type": "text",

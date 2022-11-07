@@ -32,6 +32,14 @@
         margin-left: -1.2rem;
     }
 
+    image-transition {
+      transition: opacity 1s ease-in-out;
+    }
+
+    .transparent {
+      opacity: 0;
+    }
+
     .header__heading-logo {
         max-width: {{ section.settings.logo_width }}px;
     }
@@ -124,12 +132,14 @@
     }
 
     .section-header {
-        margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+      margin-top: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+      margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
     }
 
     @media screen and (min-width: 750px) {
         .section-header {
-            margin-bottom: {{ section.settings.margin_bottom }}px;
+          margin-top: {{ section.settings.margin_bottom }}px;
+          margin-bottom: {{ section.settings.margin_bottom }}px;
         }
     }
 
@@ -420,7 +430,8 @@
           {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
           {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
           {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
-          class: 'header__heading-logo',
+            id: 'mainLogo',
+          class: 'header__heading-logo image-transition mainLogo',
           widths: '50, 100, 150, 200, 250, 300, 400, 500',
           height: logo_height,
           width: section.settings.logo_width,
@@ -428,6 +439,17 @@
           }}
         {%- else -%}
           <span style="color: {{ section.settings.text_color }}" class="h2">{{ shop.name }}</span>
+        {%- endif -%}
+        {%- if section.settings.logo2 != blank -%}
+          {%- assign logo_alt = section.settings.logo2.alt | default: shop.name | escape -%}
+          {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
+          {{ section.settings.logo2 | image_url: width: section.settings.width | image_tag:
+          class: 'header__heading-logo image-transition altLogo',
+          widths: '50, 100, 150, 200, 250, 300, 400, 500',
+          height: logo_height,
+          width: section.settings.logo_width,
+          alt: logo_alt
+          }}
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -551,6 +573,17 @@
           }}
         {%- else -%}
           <span style="color: {{ section.settings.text_color }}" class="h2">{{ shop.name }}</span>
+        {%- endif -%}
+        {%- if section.settings.logo2 != blank -%}
+          {%- assign logo_alt = section.settings.logo2.alt | default: shop.name | escape -%}
+          {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
+          {{ section.settings.logo2 | image_url: width: section.settings.width | image_tag:
+          class: 'header__heading-logo image-transition altLogo',
+          widths: '50, 100, 150, 200, 250, 300, 400, 500',
+          height: logo_height,
+          width: section.settings.logo_width,
+          alt: logo_alt
+          }}
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -755,12 +788,15 @@
 
 {% javascript %}
 const navbar = document.querySelector('.custom-header');
+const mainLogo = document.querySelector('.mainLogo');
 window.onscroll = () => {
-if (window.scrollY > 1) {
-navbar.classList.add('scrolled');
-} else {
-navbar.classList.remove('scrolled');
-}
+  if (window.scrollY > 1) {
+    navbar.classList.add('scrolled');
+    mainLogo.classList.add('transparent');
+  } else {
+    navbar.classList.remove('scrolled');
+    mainLogo.classList.remove('transparent');
+  }
 };
 
 class StickyHeader extends HTMLElement {
@@ -900,6 +936,21 @@ customElements.define('sticky-header', StickyHeader);
   "class": "section-header",
   "settings": [
     {
+      "type": "radio",
+      "id": "color_type",
+      "label": "Color Option",
+      "options": [
+        {
+          "value": "scheme",
+          "label": "Use Color Scheme"
+        },
+        {
+          "value": "custom",
+          "label": "Use Custom Colors"
+        }
+      ]
+    },
+    {
       "type": "checkbox",
       "id": "background_transparent",
       "label": "Transparent Background",
@@ -951,10 +1002,15 @@ customElements.define('sticky-header', StickyHeader);
       "label": "t:sections.header.settings.logo.label"
     },
     {
+      "type": "image_picker",
+      "id": "logo2",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
       "type": "range",
       "id": "logo_width",
       "min": 50,
-      "max": 250,
+      "max": 500,
       "step": 10,
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
@@ -1073,6 +1129,16 @@ customElements.define('sticky-header', StickyHeader);
     },
     {
       "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.header.settings.margin_top.label",
+      "default": 0
+    },
+    {
+      "type": "range",
       "id": "margin_bottom",
       "min": 0,
       "max": 100,
@@ -1080,10 +1146,6 @@ customElements.define('sticky-header', StickyHeader);
       "unit": "px",
       "label": "t:sections.header.settings.margin_bottom.label",
       "default": 0
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
     },
     {
       "type": "range",
