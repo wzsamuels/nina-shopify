@@ -7,13 +7,16 @@
           "type": "heading",
           "settings": {
             "heading": "Nina Hair Braiding",
-            "heading_size": "h1"
+            "heading_font_size": 30,
+            "scale_heading_size": true
           }
         },
         "afef1f90-e0f4-47ad-b750-4cf1320a6ca6": {
           "type": "text",
           "settings": {
             "text": "<p>1002 Arnold St, Greensboro, NC 27405<\/p><p>Open Daily From 8am to 6pm<\/p><p>Walk-Ins Welcome!<\/p>",
+            "text_font_size": 11,
+            "scale_text_size": true,
             "text_style": "body"
           }
         },
@@ -151,34 +154,6 @@
         "margin_bottom": 0
       }
     },
-    "16608767819c152bb1": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1664140889666c333f": {
       "type": "featured-collection",
       "settings": {
@@ -210,7 +185,6 @@
   "order": [
     "1660950608658ed2c4",
     "multicolumn",
-    "16608767819c152bb1",
     "1664140889666c333f"
   ]
 }
