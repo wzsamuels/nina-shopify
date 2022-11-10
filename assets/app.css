@@ -551,18 +551,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.tw-my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .tw-mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.tw-ml-4 {
-  margin-left: 1rem;
+.tw-my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .tw-mb-16 {
@@ -617,10 +613,6 @@ video {
   justify-content: center;
 }
 
-.tw-justify-between {
-  justify-content: space-between;
-}
-
 .tw-justify-around {
   justify-content: space-around;
 }
@@ -662,6 +654,10 @@ video {
 @media (min-width: 750px) {
   .md\:tw-block {
     display: block;
+  }
+
+  .md\:tw-h-full {
+    height: 100%;
   }
 }
 

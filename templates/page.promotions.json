@@ -22,10 +22,10 @@
             "image": "shopify:\/\/shop_images\/coupon-sample1.png",
             "vertical_image_alignment": "top",
             "video_url": "",
-            "title": "Column",
+            "title": "Monday Coupon",
             "block_header_size": 20,
             "block_header_align": "left",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "block_text_size": 16,
             "block_text_align": "left",
             "link_label": "",
@@ -49,11 +49,30 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "00292e8c-03a4-4561-82e5-db71b53a8f46": {
+          "type": "column",
+          "settings": {
+            "content_horizontal_align": "center",
+            "text_justify": "start",
+            "image": "shopify:\/\/shop_images\/Mon_coupon_1b7d0b7e-74c8-4cbf-b447-199d0d0c9549.png",
+            "vertical_image_alignment": "top",
+            "video_url": "",
+            "title": "Wednesday Coupon",
+            "block_header_size": 20,
+            "block_header_align": "left",
+            "text": "",
+            "block_text_size": 16,
+            "block_text_align": "left",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-0",
-        "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-1"
+        "template--15873403191461__e0d71bcd-ff73-499e-aa4e-317b187dc664-1665281029d0697e2a-1",
+        "00292e8c-03a4-4561-82e5-db71b53a8f46"
       ],
       "settings": {
         "title": "Multicolumn",

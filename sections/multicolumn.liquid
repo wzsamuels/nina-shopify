@@ -21,7 +21,6 @@
   }
 
   .section-{{ section.id }}-text-align {
-    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: initial;
@@ -103,7 +102,7 @@
                     src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info tw-h-full section-{{ section.id }}-text-align tw-justify-{{ block.settings.text_justify }} tw-items-{{ block.settings.content_horizontal_align }}">
+              <div class="multicolumn-card__info md:tw-h-full section-{{ section.id }}-text-align tw-justify-{{ block.settings.text_justify }} tw-items-{{ block.settings.content_horizontal_align }}">
                 {%- if block.settings.title != blank -%}
                   <h3 class="tw-text-{{ block.settings.block_header_align }}" style="font-size: {{ block.settings.block_header_size }}px">
                     {{ block.settings.title | escape }}
