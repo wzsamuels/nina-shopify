@@ -112,11 +112,15 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2
+              class="banner__heading" {{ block.shopify_attributes }}
+              style="font-size: calc({{ block.settings.heading_font_size }}px {% if block.settings.scale_heading_size %} + 1vw{% endif %});"
+            >
               <span style="{% if section.settings.color_type == "custom" %}color: {{ block.settings.header_color }}{% endif %};">{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div class="banner__text {{ block.settings.text_style }}" {{ block.shopify_attributes }}
+                 style="font-size: calc({{ block.settings.text_font_size }}px  + {% if block.settings.scale_text_size %} 1vw{% endif %});">
               <span style="{% if section.settings.color_type == "custom" %}color: {{ block.settings.text_color }}{% endif %}">{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
@@ -421,6 +425,18 @@
           "label": "Header Color"
         },
         {
+          "type": "number",
+          "id": "heading_font_size",
+          "default": 24,
+          "label": "Heading Size (px)"
+        },
+        {
+          "type": "checkbox",
+          "id": "scale_heading_size",
+          "label": "Scale Heading Size with Screen Size",
+          "default": true
+        },
+        {
           "type": "select",
           "id": "heading_size",
           "options": [
@@ -458,6 +474,18 @@
           "id": "text_color",
           "default": "#000000",
           "label": "Text Color"
+        },
+        {
+          "type": "number",
+          "id": "text_font_size",
+          "label": "Text Size",
+          "default": 16
+        },
+        {
+          "type": "checkbox",
+          "id": "scale_text_size",
+          "label": "Scale Text Size",
+          "default": true
         },
         {
           "type": "select",
